@@ -5,8 +5,8 @@ func allows you to declare and decorate js functions
 ```js
 // Create decorator to say hello everytime a function is called
 const $sayHello = func(fn => (...args) => {
-  console.log("Hello")
-  return fn(...args)
+  console.log("Hello");
+  return fn(...args);
 });
 
 // Create a sum function decorated with $sayHello
@@ -27,8 +27,8 @@ You can implement as many decorators as you need
 
 ```js
 const $sayHello = func(fn => (...args) => {
-  console.log("Hello")
-  return fn(...args)
+  console.log("Hello");
+  return fn(...args);
 });
 
 const $sayBye = func(fn => (...args) => {
