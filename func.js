@@ -5,9 +5,7 @@ function func(...args){
     return fn;
 }
 
-if(document && document.currentScript && document.currentScript.type === "module"){
-  export func;
-}else if(module){
+if(module){
   module.exports = func;
 }else{
   window.func = func;
