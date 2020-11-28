@@ -6,7 +6,7 @@ function func(...args){
 }
 
 if(document && document.currentScript && document.currentScript.type === "module"){
-  exports func;
+  export func;
 }else if(module){
   module.exports = func;
 }else{
